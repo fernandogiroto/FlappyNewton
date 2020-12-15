@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+
+[wm-flappy] {
+    position: relative;
+    border: 5px solid dodgerblue;
+    width: 700px;
+    height: 1200px;
+    margin:  15px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.apple {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30%);
+}
+
+.par-de-barreiras{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda{
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #658c48, #59722d);
+    border: 2px solid rgb(72, 72, 72);
+}
+
+.barreira .corpo{
+    height: 120px;
+    width: 110px;
+    background: linear-gradient(90deg, #61512a, #87601c);
+    border-left: 2px solid rgb(55, 55, 55);
+    border-left: 2px solid  rgb(55, 55, 55);
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 1000;
+}
